@@ -1,0 +1,28 @@
+version: '2'
+
+services:
+    # Software update service
+    update:
+        restart: on-failure
+        image: ubuntu:16.04
+    # Scheduling service
+    scheduler:
+        restart: on-failure
+        image: ubuntu:16.04
+    # Image and video processing
+    vision_api:
+        restart: on-failure
+        image: ubuntu:16.04
+    # Audio processing
+    audio_api:
+        restart: on-failure
+        image: ubuntu:16.04
+    # Dialog processing
+    comminication:
+        restart: on-failure
+        image: ubuntu:16.04
+    # Physical movement coordination
+    physical_animation_service:
+        restart: on-failure
+        image: ubuntu:16.04
+
